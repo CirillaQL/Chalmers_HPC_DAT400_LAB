@@ -1,0 +1,29 @@
+# C++ build artifacts
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+*.a
+*.lib
+*.lo
+*.gch
+*.pch
+
+# Build directories
+/build/
+/bin/
+/Debug/
+/Release/
+/CMakeFiles/
+/cmake-build-*/
+
+# IDE files
+*.vcxproj*
+*.sln
+*.user
+*.DS_Store
+
+# Others
+*.log
