@@ -14,10 +14,7 @@ DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 _OBJ = deep_core.o vector_ops.o
 OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 
-deep_core.o: deep_core.cpp $(DEPS)
-	$(CXX) -c -o $@ $< ${CXXFLAGS}
-
-vector_ops.o: vector_ops.cpp $(DEPS)
+$(ODIR)/%.o: %.cpp $(DEPS)
 	$(CXX) -c -o $@ $< ${CXXFLAGS}
 
 
