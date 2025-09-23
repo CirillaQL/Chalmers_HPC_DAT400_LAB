@@ -3,10 +3,11 @@
 #include <algorithm>
 #include <vector>
 #include <iostream>
+#include <sys/time.h>
 #include "vector_ops.h" 
 
 //#define BLOCK_TILE 
-//#define USE_PTHREAD 
+#define USE_PTHREAD 
 
 #ifdef USE_PTHREAD
 struct gemm_thread_args
@@ -23,10 +24,12 @@ struct gemm_thread_args
 
 void *dot_block (void *args) {
     gemm_thread_args* curr_args = (gemm_thread_args*) args;
-    for( int row = curr_args->row_start; row < curr_args->row_end; ++row ) {
-        for( int col = 0; col < curr_args->m2_columns; ++col ) {
-            for( int k = 0; k < curr_args->m1_columns; ++k ) {
-               (*curr_args->output)[row * curr_args->m2_columns + col ] += (*curr_args->m1)[ row * curr_args->m1_columns + k ] * (*curr_args->m2)[k * curr_args->m2_columns + col];
+    for(int row = curr_args->row_start; row < curr_args->row_end; ++row) {
+        for(int k = 0; k < curr_args->m1_columns; ++k) {
+            float m1_val = (*curr_args->m1)[row * curr_args->m1_columns + k];
+            for(int col = 0; col < curr_args->m2_columns; ++col) {
+                (*curr_args->output)[row * curr_args->m2_columns + col] += 
+                    m1_val * (*curr_args->m2)[k * curr_args->m2_columns + col];
             }
         }
     }
@@ -192,7 +195,7 @@ vector <float> transform (const float *m, const int C, const int R) {
 }
 
 vector <float> dot (const vector <float>& m1, const vector <float>& m2, const int m1_rows, const int m1_columns, const int m2_columns) {
-    
+
     /*  Returns the product of two matrices: m1 x m2.
      Inputs:
      m1: vector, left matrix of size m1_rows x m1_columns
@@ -203,20 +206,40 @@ vector <float> dot (const vector <float>& m1, const vector <float>& m2, const in
      m2_columns: int, number of columns in the right matrix m2
      Output: vector, m1 * m2, product of two vectors m1 and m2, a matrix of size m1_rows x m2_columns
      */
-    
+    auto gemm_start = std::chrono::high_resolution_clock::now();
     vector <float> output (m1_rows*m2_columns, 0);
 #if defined(BLOCK_TILE)
-    const int block_size = 64 / sizeof(float); // 64 = common cache line size
+    const int block_size = 64; // Optimal for L1 cache: 64x64x4bytes = 16KB per block
     int N = m1_rows;
-    int M = m2_columns; 
+    int M = m2_columns;
     int K = m1_columns;
 // [TASK] WRITE CODE FOR BLOCK TILLING HERE
+    for (int ii = 0; ii < N; ii += block_size) {
+        for (int jj = 0; jj < M; jj += block_size) {
+            for (int kk = 0; kk < K; kk += block_size) {
+
+                // Inner loops: compute within the current tile
+                int i_end = min(ii + block_size, N);
+                int j_end = min(jj + block_size, M);
+                int k_end = min(kk + block_size, K);
+
+                for (int i = ii; i < i_end; ++i) {
+                    for (int k = kk; k < k_end; ++k) {
+                        for (int j = jj; j < j_end; ++j) {
+                            output[i * M + j] += m1[i * K + k] * m2[k * M + j];
+                        }
+                    }
+                }
+            }
+        }
+    }
 #elif defined(USE_PTHREAD) 
 
-    const int num_partitions = 8; //[TASK] SHOULD BE CONFIGURED BY USER
+    const int num_partitions = 1; //[TASK] SHOULD BE CONFIGURED BY USER
     pthread_t threads[num_partitions];
     
-    const int psize = m1_rows / num_partitions;
+    const int part_size = m1_rows / num_partitions;
+    const int remainder = m1_rows % num_partitions;
 
     for (int i = 0; i < num_partitions; ++i) {
       gemm_thread_args* args = new gemm_thread_args;
@@ -234,14 +257,17 @@ vector <float> dot (const vector <float>& m1, const vector <float>& m2, const in
     }
 #else
     for( int row = 0; row < m1_rows; ++row ) {
-        for( int col = 0; col < m2_columns; ++col ) {
-            for( int k = 0; k < m1_columns; ++k ) {
+        for( int k = 0; k < m1_columns; ++k ) {
+            for( int col = 0; col < m2_columns; ++col ) {
                 output[ row * m2_columns + col ] += m1[ row * m1_columns + k ] * m2[ k * m2_columns + col ];
             }
         }
     }
 #endif
-  return output;
+    auto gemm_end = std::chrono::high_resolution_clock::now();
+    auto gemm_duration = std::chrono::duration_cast<std::chrono::microseconds>(gemm_end - gemm_start);
+    cout << "GEMM time: " << gemm_duration.count() << " microseconds" << endl;
+    return output;
 }
 
 

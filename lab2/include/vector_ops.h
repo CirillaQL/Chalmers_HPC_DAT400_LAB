@@ -2,6 +2,9 @@
 #define VECTOR_OPS
 #include <vector>
 using namespace std;
+
+// Global variable for configurable pthread count
+extern int pthread_num_threads;
 void print ( const vector <float>& m, int n_rows, int n_columns );
 int argmax ( const vector <float>& m );
 vector<float> random_vector(const int size);

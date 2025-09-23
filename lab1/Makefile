@@ -33,7 +33,7 @@ run_serial:
 	./nnetwork
 
 run_perf:
-	timeout 180 perf record -g --call-graph fp ./nnetwork
+	timeout 180 perf record -F 99 -g --call-graph fp ./nnetwork
 
 run_llc: nnetwork
 	perf stat -e LLC-loads,LLC-load-misses ./nnetwork

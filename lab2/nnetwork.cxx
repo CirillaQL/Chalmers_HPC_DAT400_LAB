@@ -11,6 +11,7 @@
 #include <sstream>
 #include <string>
 #include <chrono>
+#include <sys/time.h>
 #include "deep_core.h"
 #include "vector_ops.h"
 
@@ -71,9 +72,14 @@ int main(int argc, char * argv[]) {
   vector <float> W2 = random_vector(128*64);
   vector <float> W3 = random_vector(64*10);
   
-  std::chrono::time_point<std::chrono::system_clock> t1,t2;     
+  struct timeval program_start, t_before_dot, t_after_dot;
+  double total_dot_time = 0.0;
+
+  gettimeofday(&program_start, 0);
+
+  std::chrono::time_point<std::chrono::system_clock> t1,t2;
   cout << "Training the model ...\n";
-  for (unsigned i = 0; i < 10000; ++i) {    
+  for (unsigned i = 0; i < 10000; ++i) {
     t1 = std::chrono::system_clock::now();    
     // Building batches of input variables (X) and labels (y)
     int randindx = rand() % (42000-BATCH_SIZE);
@@ -87,22 +93,52 @@ int main(int argc, char * argv[]) {
     }
 
     // Feed forward
+    gettimeofday(&t_before_dot, 0);
     vector<float> a1 = relu(dot( b_X, W1, BATCH_SIZE, 784, 128 ));
+    gettimeofday(&t_after_dot, 0);
+    total_dot_time += (t_after_dot.tv_sec - t_before_dot.tv_sec) * 1000000.0 + (t_after_dot.tv_usec - t_before_dot.tv_usec);
+
+    gettimeofday(&t_before_dot, 0);
     vector<float> a2 = relu(dot( a1, W2, BATCH_SIZE, 128, 64 ));
+    gettimeofday(&t_after_dot, 0);
+    total_dot_time += (t_after_dot.tv_sec - t_before_dot.tv_sec) * 1000000.0 + (t_after_dot.tv_usec - t_before_dot.tv_usec);
+
+    gettimeofday(&t_before_dot, 0);
     vector<float> yhat = softmax(dot( a2, W3, BATCH_SIZE, 64, 10 ), 10);
+    gettimeofday(&t_after_dot, 0);
+    total_dot_time += (t_after_dot.tv_sec - t_before_dot.tv_sec) * 1000000.0 + (t_after_dot.tv_usec - t_before_dot.tv_usec);
     
     // Back propagation
     vector<float> dyhat = (yhat - b_y);
     // dW3 = a2.T * dyhat
+    gettimeofday(&t_before_dot, 0);
     vector<float> dW3 = dot(transform( &a2[0], BATCH_SIZE, 64 ), dyhat, 64, BATCH_SIZE, 10);
+    gettimeofday(&t_after_dot, 0);
+    total_dot_time += (t_after_dot.tv_sec - t_before_dot.tv_sec) * 1000000.0 + (t_after_dot.tv_usec - t_before_dot.tv_usec);
+
     // dz2 = dyhat * W3.T * relu'(a2)
+    gettimeofday(&t_before_dot, 0);
     vector<float> dz2 = dot(dyhat, transform( &W3[0], 64, 10 ), BATCH_SIZE, 10, 64) * reluPrime(a2);
+    gettimeofday(&t_after_dot, 0);
+    total_dot_time += (t_after_dot.tv_sec - t_before_dot.tv_sec) * 1000000.0 + (t_after_dot.tv_usec - t_before_dot.tv_usec);
+
     // dW2 = a1.T * dz2
+    gettimeofday(&t_before_dot, 0);
     vector<float> dW2 = dot(transform( &a1[0], BATCH_SIZE, 128 ), dz2, 128, BATCH_SIZE, 64);
+    gettimeofday(&t_after_dot, 0);
+    total_dot_time += (t_after_dot.tv_sec - t_before_dot.tv_sec) * 1000000.0 + (t_after_dot.tv_usec - t_before_dot.tv_usec);
+
     // dz1 = dz2 * W2.T * relu'(a1)
+    gettimeofday(&t_before_dot, 0);
     vector<float> dz1 = dot(dz2, transform( &W2[0], 128, 64 ), BATCH_SIZE, 64, 128) * reluPrime(a1);
+    gettimeofday(&t_after_dot, 0);
+    total_dot_time += (t_after_dot.tv_sec - t_before_dot.tv_sec) * 1000000.0 + (t_after_dot.tv_usec - t_before_dot.tv_usec);
+
     // dW1 = X.T * dz1
+    gettimeofday(&t_before_dot, 0);
     vector<float> dW1 = dot(transform( &b_X[0], BATCH_SIZE, 784 ), dz1, 784, BATCH_SIZE, 128);
+    gettimeofday(&t_after_dot, 0);
+    total_dot_time += (t_after_dot.tv_sec - t_before_dot.tv_sec) * 1000000.0 + (t_after_dot.tv_usec - t_before_dot.tv_usec);
     
 
     // Updating the parameters
@@ -110,22 +146,37 @@ int main(int argc, char * argv[]) {
     W2 = W2 - lr * dW2;
     W1 = W1 - lr * dW1;
              
-    if ((mpirank == 0) && (i+1) % 100 == 0){          
+    if ((mpirank == 0) && (i+1) % 100 == 0){
+      struct timeval current_time;
+      gettimeofday(&current_time, 0);
+      double total_program_time = (current_time.tv_sec - program_start.tv_sec) * 1000000.0 + (current_time.tv_usec - program_start.tv_usec);
+      double percentage = (total_dot_time / total_program_time) * 100.0;
+
       cout << "Predictions:" << "\n";
       print ( yhat, 10, 10 );
       cout << "Ground truth:" << "\n";
-      print ( b_y, 10, 10 );      
+      print ( b_y, 10, 10 );
       vector<float> loss_m = yhat - b_y;
       float loss = 0.0;
       for (unsigned k = 0; k < BATCH_SIZE*10; ++k){
         loss += loss_m[k]*loss_m[k];
-      }      
+      }
       t2 = std::chrono::system_clock::now();
       chrono::duration<double> elapsed_seconds = t2-t1;
       double ticks = elapsed_seconds.count();
       cout << "Iteration #: "  << i << endl;
       cout << "Iteration Time: "  << ticks << "s" << endl;
       cout << "Loss: " << loss/BATCH_SIZE << endl;
+      cout << "Total time in dot(): " << total_dot_time / 1000000.0 << " seconds" << endl;
+      cout << "Total program time: " << total_program_time / 1000000.0 << " seconds" << endl;
+      cout << "Percentage of time spent in dot(): " << percentage << "%" << endl;
+
+      // Amdahl's Law Analysis
+      double f = percentage / 100.0;  // Parallel fraction
+      int P = 4;  // M4 performance cores
+      double max_speedup = 1.0 / ((1 - f) + f / P);
+      cout << "Parallel fraction (f): " << f << endl;
+      cout << "Theoretical max speedup (P=" << P << "): " << max_speedup << "x" << endl;
       cout << "*******************************************" << endl;
     };      
   };
