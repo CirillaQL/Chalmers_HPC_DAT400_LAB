@@ -1,0 +1,245 @@
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 3 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_uninitialized.h:469:7: optimized: Loop 4 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/basic_ios.h:477:2: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 3 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_uninitialized.h:469:7: optimized: Loop 4 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/basic_ios.h:477:2: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/random.tcc:3365:34: optimized: loop with 2 iterations completely unrolled (header execution count 357878155)
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+src/vector_ops.cpp:189:27: optimized: versioned this loop for when certain strides are 1
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+src/vector_ops.cpp:263:31: optimized: Guard hoisted
+src/vector_ops.cpp:262:27: optimized: Guard hoisted
+src/vector_ops.cpp:262:27: optimized: Guard hoisted
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_uninitialized.h:469:7: optimized: Loop 4 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/basic_ios.h:477:2: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+src/vector_ops.cpp:254:31: optimized: Guard hoisted
+src/vector_ops.cpp:254:31: optimized: Guard hoisted
+src/vector_ops.cpp:254:31: optimized: Guard hoisted
+src/vector_ops.cpp:255:39: optimized: loop vectorized using 16 byte vectors
+src/vector_ops.cpp:255:39: optimized:  loop versioned for vectorization because of possible aliasing
+src/vector_ops.cpp:255:39: optimized: loop with 2 iterations completely unrolled (header execution count 28966214)
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/random.tcc:3365:34: optimized: loop with 2 iterations completely unrolled (header execution count 357878155)
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+src/vector_ops.cpp:189:27: optimized: versioned this loop for when certain strides are 1
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_uninitialized.h:469:7: optimized: Loop 4 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/basic_ios.h:477:2: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 3 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_uninitialized.h:469:7: optimized: Loop 4 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/basic_ios.h:477:2: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 3 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_uninitialized.h:469:7: optimized: Loop 4 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/basic_ios.h:477:2: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/random.tcc:3365:34: optimized: loop with 2 iterations completely unrolled (header execution count 357878155)
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+src/vector_ops.cpp:189:27: optimized: versioned this loop for when certain strides are 1
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_algobase.h:924:22: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:405:25: optimized: basic block part vectorized using 16 byte vectors
+src/vector_ops.cpp:254:31: optimized: Guard hoisted
+src/vector_ops.cpp:253:31: optimized: Guard hoisted
+src/vector_ops.cpp:253:31: optimized: Guard hoisted
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_uninitialized.h:469:7: optimized: Loop 4 distributed: split to 0 loops and 1 library calls.
+src/vector_ops.cpp:255:39: optimized: loop vectorized using 16 byte vectors
+src/vector_ops.cpp:255:39: optimized:  loop versioned for vectorization because of possible aliasing
+src/vector_ops.cpp:255:39: optimized: loop with 2 iterations completely unrolled (header execution count 28966214)
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/basic_ios.h:477:2: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:106:4: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors
+/opt/homebrew/Cellar/gcc/15.1.0/include/c++/15/bits/stl_vector.h:121:13: optimized: basic block part vectorized using 16 byte vectors

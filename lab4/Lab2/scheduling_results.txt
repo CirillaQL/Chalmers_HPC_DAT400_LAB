@@ -1,0 +1,72 @@
+Testing OpenMP Scheduling Policies
+===================================
+
+Testing policy: static
+-----------------------------------
+  Chunk size: 1
+    Modified:         #pragma omp for schedule(static, 1)
+    Running...
+Total OpenMP time: 19.2518s
+
+  Chunk size: 16
+    Modified:         #pragma omp for schedule(static, 16)
+    Running...
+Total OpenMP time: 20.1637s
+
+  Chunk size: 64
+    Modified:         #pragma omp for schedule(static, 64)
+    Running...
+Total OpenMP time: 21.3227s
+
+  Chunk size: 196
+    Modified:         #pragma omp for schedule(static, 196)
+    Running...
+Total OpenMP time: 32.2816s
+
+
+Testing policy: dynamic
+-----------------------------------
+  Chunk size: 1
+    Modified:         #pragma omp for schedule(dynamic, 1)
+    Running...
+Total OpenMP time: 25.0142s
+
+  Chunk size: 16
+    Modified:         #pragma omp for schedule(dynamic, 16)
+    Running...
+Total OpenMP time: 26.1917s
+
+  Chunk size: 64
+    Modified:         #pragma omp for schedule(dynamic, 64)
+    Running...
+Total OpenMP time: 23.2419s
+
+  Chunk size: 196
+    Modified:         #pragma omp for schedule(dynamic, 196)
+    Running...
+Total OpenMP time: 35.0461s
+
+
+Testing policy: guided
+-----------------------------------
+  Chunk size: 1
+    Modified:         #pragma omp for schedule(guided, 1)
+    Running...
+Total OpenMP time: 22.1299s
+
+  Chunk size: 16
+    Modified:         #pragma omp for schedule(guided, 16)
+    Running...
+Total OpenMP time: 21.6472s
+
+  Chunk size: 64
+    Modified:         #pragma omp for schedule(guided, 64)
+    Running...
+Total OpenMP time: 22.4988s
+
+  Chunk size: 196
+    Modified:         #pragma omp for schedule(guided, 196)
+    Running...
+Total OpenMP time: 32.4578s
+
+
