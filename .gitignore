@@ -18,6 +18,7 @@
 /Release/
 /CMakeFiles/
 /cmake-build-*/
+/.vscode/
 
 # IDE files
 *.vcxproj*
