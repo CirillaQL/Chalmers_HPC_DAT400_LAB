@@ -65,10 +65,7 @@ int main(int argc, char ** argv) {
 		MPI_Recv(random_seq_local, chunk_size, MPI_INT, 0, 55, MPI_COMM_WORLD, &status);
 	}
 #elif COLL || COLL_OPT
-	//----Question 1: Use the appropriate MPI collective to distribute chunks of the initial array "random_seq"
-	//TODO: All processes to receive a chunk in the array "random_seq_local"
-
-	//----
+	MPI_Scatter(random_seq, chunk_size, MPI_INT, random_seq_local, chunk_size, MPI_INT, 0, MPI_COMM_WORLD);
 #endif
 	
 	//Compute new loop boundaries - take care of the last process with rank=size-1
@@ -101,10 +98,7 @@ int main(int argc, char ** argv) {
 		pi = pi + partial_pi;
 	}	
 #elif COLL 
-	//----Question 2: Use the appropriate MPI collective to reduce partial sums "partial_pi" in "pi" on rank 0
-	//TODO: Rank 0 to receive a sum of all partial sums
-	
-	//----
+	MPI_Reduce(&partial_pi, &pi, 1, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
 #endif
 
 	//Rank 0 distributes final result "pi" on all processes
@@ -119,17 +113,11 @@ int main(int argc, char ** argv) {
 			MPI_Send(&pi, 1, MPI_DOUBLE, i, 55, MPI_COMM_WORLD);
 	}
 #elif COLL
-	//----Question 3: Use the appropriate MPI collective to distribute the full sum from rank 0 to all processes
-	//TODO: All processes to receive the full sum in "pi"
-	
-	//----
+	MPI_Bcast(&pi, 1, MPI_DOUBLE, 0, MPI_COMM_WORLD);
 #endif
 
 #ifdef COLL_OPT
-	//----Question 4: Use a single MPI collective to optimize the previous two collective calls (Questions 2 and 3)
-	//TODO: All processes to receive the full sum in "pi" from partial sums in "partial_pi"
-	
-	//----
+	MPI_Allreduce(&partial_pi, &pi, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
 #endif
 	//All processes print the final result
 	pi = pi * 4.0 / (double)N;
