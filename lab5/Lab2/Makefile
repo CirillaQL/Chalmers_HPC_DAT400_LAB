@@ -1,5 +1,6 @@
 IDIR=include
-CXX=g++
+CXX=mpicxx 
+MPICXX=mpicxx
 CXXFLAGS=-I$(IDIR) -std=c++11 -fopenmp -O3
 
 ODIR=src
